@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container">
+    <h3 id='gold_count'>Gold Count: {{gold_amount}}</h3>
+    <div class="row">
+        <div class="location">
+            <h3>Farm</h3>
+            <p>Earns 2-5 Gold</p>
+            <button (click)="click('farm')"  name='farm'>Farm!</button>
+        </div>
+        <div class="location">
+            <h3>Cave</h3>
+            <p>Earns 5-10 Gold</p>
+            <button (click)="click('cave')"  name='cave'>Cave!</button>
+        </div>
+        <div class="location">
+            <h3>House</h3>
+            <p>Earns 7-15 Gold</p>
+            <button (click)="click('house')"  name='house'>House!</button>
+        </div>
+        <div class="location">
+            <h3>Casino</h3>
+            <p>Earn up to or Lose up to 100 Gold</p>
+            <button (click)="click('casino')"  name='casino'>Casino!</button>
+        </div>
+    </div>
+    <h1>Adventure Log</h1>
+    <div id='message_container'>
+        <ul>
+            <li *ngFor="let activity of log">
+                {{activity}}
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
